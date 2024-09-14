@@ -11,3 +11,4 @@ Design Principle : Mobile First
 - Add Type Writer effect to the profession text
 - code refactor:
   - use variables for colors
+- update overview image with profession update text

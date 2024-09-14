@@ -1,0 +1,108 @@
+body {
+    background: #111016;
+    color: white;
+    font-family: monospace;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+
+#textLogo {
+    font-size:1.8rem;
+    text-decoration: none;
+    color: #014fc2;
+    font-weight: bold;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+#textLogo:hover {
+    transform: scale(1.1);
+}
+
+header nav {
+    display: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-size: .9rem;
+}
+
+header nav a:hover,
+header nav a.active {
+    border-bottom: 2px solid #014fc2;
+    color: #014fc2;
+}
+
+header,
+main {
+    padding: 0 12vw;
+}
+
+main div {
+    justify-content: center;
+    align-content: center;
+}
+
+.imageContainer img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#mainHeading span,
+#subHeading span {
+    color: #014fc2;
+}
+
+.mediaIcons i {
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid #014fc2;
+    border-radius: 50%;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.mediaIcons i:hover {
+    transition: .3s;
+    background-color: #014fc2;
+    color: #111016;
+    transform: scale(1.2);
+}
+
+#hireMeBtn {
+    padding: 8px 20px;
+    margin: 20px 0 10px 0;
+    background: transparent;
+    border: 2px solid #014fc2;
+    color: #fff;
+    letter-spacing: 3px;
+    border-radius: 8px;
+}
+
+#hireMeBtn:hover {
+    color: #111016;
+    background-color: #014fc2;
+    transition: .5s;
+}
+
+@media screen and (min-width: 850px) {
+
+    header nav {
+        display: block;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 5vw;
+        margin-top: 15vh;
+    }
+}
